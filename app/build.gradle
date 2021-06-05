@@ -1,0 +1,129 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'com.alibaba.arouter'
+}
+
+//阿里路由框架配置
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+
+    signingConfigs {
+        release {
+            storeFile rootProject.file('TestKey')
+            storePassword '123abc'
+            keyAlias 'test'
+            keyPassword '123abc'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            //集成Google登录时一定要注意配置debug签名和firebase控制台中配置的签名文件一致
+            //否则会出现一直获取不到用户信息
+            signingConfig signingConfigs.release
+        }
+        release {
+            //打正式包时 开启混淆、代码和资源压缩、优化
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    //开启DataBinding
+    dataBinding {
+        enabled true
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            if (isBuildModule.toBoolean()) {
+                //独立运行
+                manifest.srcFile 'src/main/alone/AndroidManifest.xml'
+            } else {
+                //合并到宿主
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                resources {
+                    //正式版本时，排除debug文件夹下所有调试文件
+                    exclude 'src/debug/*'
+                }
+            }
+        }
+    }
+
+    //统一资源前缀，规范资源引用
+    resourcePrefix "app_"
+    dataBinding {
+        enabled true
+    }
+
+    //生成指定名称的release发布版的 apk文件
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            String dateString = new Date().format('yyyyMMdd_HHmmss')
+            def outputApkFileName = "AuChat_${android.defaultConfig.applicationId}_V${android.defaultConfig.versionName}"
+            if (variant.buildType.name.equals('release')) {
+                outputApkFileName = "${outputApkFileName}_${dateString}_release.apk"
+            } else if (variant.buildType.name.equals('debug')) {
+                outputApkFileName = "${outputApkFileName}_${dateString}_debug.apk"
+            }
+            outputFileName = outputApkFileName
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    configurations {
+        all {
+            exclude module: 'httpclient'
+            exclude module: 'commons-logging'
+        }
+    }
+
+}
+
+//不需要使用Multidex,因为5.0以后使用的是ART虚拟机,它本身支持从apk加载多个dex文件,而AuChat最低支持为5.0,故不需要使用Multidex
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //宿主项目中判断组件是否需要独立运行
+    if (isBuildModule.toBoolean()) {
+        //组件独立运行时，宿主项目直接依赖基础库，避免编译错误
+        implementation project(':base-common')
+    } else {
+        //主业务模块
+        implementation project(':module-main')
+    }
+
+}

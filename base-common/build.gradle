@@ -1,0 +1,100 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'com.alibaba.arouter'
+    id 'com.didi.dokit'
+}
+
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        //指定子模块的混淆文件
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true   //开启混淆
+            zipAlignEnabled true  //压缩优化
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            if (isBuildModule.toBoolean()) {
+            } else {
+                resources {
+                    //正式版本时，排除debug文件夹下所有调试文件
+                    exclude 'src/debug/*'
+                }
+            }
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    //support
+    api rootProject.ext.support["support-v4"]
+    api rootProject.ext.support["appcompat"]
+    api rootProject.ext.support["recyclerview"]
+    api rootProject.ext.support["corektx"]
+    api rootProject.ext.support["constraintlayout"]
+    api rootProject.ext.support["material"]
+
+    //MVVM
+    api project(path: ':base-mvvmhabit')
+    //公用资源在base中依赖
+    api project(path: ':base-res')
+    //阿里路由库
+    api rootProject.ext.dependencies["arouter-api"]
+    kapt rootProject.ext.dependencies["arouter-compiler"]
+    //RecyclerView相关
+    api rootProject.ext.dependencies["brvh"]
+    //Agentweb
+    api rootProject.ext.dependencies["agentweb"]
+    //获取唯一标识方案
+    api rootProject.ext.dependencies["android_CN_OAID"]
+    //图片选择
+    api rootProject.ext.dependencies["pictureselector"]
+    //状态栏导航栏相关
+    api rootProject.ext.dependencies["immersionbar"]
+    api rootProject.ext.dependencies["immersionbar-components"]
+    //doraemonkit
+    debugImplementation 'com.didichuxing.doraemonkit:dokitx:3.3.5'
+    releaseImplementation 'com.didichuxing.doraemonkit:dokitx-no-op:3.3.5'
+    //FlycoTabLayout
+    api rootProject.ext.dependencies["flycoTabLayout"]
+    //greendao
+    api rootProject.ext.dependencies["greendao"]
+
+}
+
+repositories {
+    mavenCentral()
+}

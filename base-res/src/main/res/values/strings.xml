@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FastProject</string>
+    <string name="res_push_notification_channel_id">FCM</string>
+    <string name="res_net_unavailable">net unavailable,please check net setting</string>
+    <string name="res_net_login_expired">login expired,please relogin</string>
+    <string name="res_net_net_error">net error</string>
+
+</resources>

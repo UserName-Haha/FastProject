@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="nickanme_validator_empty">昵称为空</string>
+    <string name="nickanme_validator_exceed_length">昵称太长啦</string>
+    <string name="search">搜索</string>
+    <string name="kit_env_switch">API环境切换</string>
+    <string name="kit_http_data_mock_switch">网络数据模拟</string>
+    <string name="kit_check_google_play_service_switch">检查GooglePlay服务</string>
+    <string name="res_last_content_gift">[礼物]</string>
+    <string name="res_last_content_image">[图片]</string>
+    <string name="res_last_content_video">[视频]</string>
+    <string name="res_last_content_voice">[语音]</string>
+    <string name="res_last_content_tips">[提示]</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FastProject</string>
+    <string name="res_push_notification_channel_id">FCM</string>
+    <string name="res_net_unavailable">网络未连接,请检查您的网络设置</string>
+    <string name="res_net_login_expired">登录过期，请重新登录</string>
+    <string name="res_net_net_error">网络异常</string>
+
+</resources>

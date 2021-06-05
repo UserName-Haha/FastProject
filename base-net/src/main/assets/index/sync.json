@@ -1,0 +1,21 @@
+{
+  "stat": 200,
+  "userinfo": null,
+  "step": 0,
+  "update_app": {
+    "url": "http:\/\/www.sevenkm.cn\/img\/sevenkm1.1.3.apk",
+    "memo": [
+      "1、增加聊天表情",
+      "2、完全适配iphoneX",
+      "3、贵族身份尽在其中",
+      "4、优化上麦功能"
+    ],
+    "type": 0,
+    "title": "5.8.0最新版",
+    "versionCode": 1
+  },
+  "gift_version": 20,
+  "authhead": "www.baidu.cn",
+  "agortc_key": "dc29729b307a416fbc5137771d57c510"
+}
+

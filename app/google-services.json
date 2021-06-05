@@ -1,0 +1,232 @@
+{
+  "project_info": {
+    "project_number": "1053771142816",
+    "project_id": "auchat-f0e1b",
+    "storage_bucket": "auchat-f0e1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053771142816:android:0f1897eb584ed862929bc5",
+        "android_client_info": {
+          "package_name": "com.haha.fastproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053771142816-2e7agbrlcdsfe1l7rf9aj73vp0p7adg5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.haha.fastproject",
+            "certificate_hash": "b0de858c10204a5417136b9a60b8587d12791f00"
+          }
+        },
+        {
+          "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAItm1DG1EqtHEjpIImoOLi2HcUyMZ8Z3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053771142816:android:79c8b143fb68e6ca929bc5",
+        "android_client_info": {
+          "package_name": "com.haha.fastproject.base"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053771142816-mnoi6fdjt830taure74qouq9svpkpik1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.haha.fastproject.base",
+            "certificate_hash": "b0de858c10204a5417136b9a60b8587d12791f00"
+          }
+        },
+        {
+          "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAItm1DG1EqtHEjpIImoOLi2HcUyMZ8Z3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053771142816:android:4f464a8abed08813929bc5",
+        "android_client_info": {
+          "package_name": "com.haha.fastproject.crashlytics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053771142816-7tqgll9n0elpiapd8vffk61ntro0mp2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.haha.fastproject.crashlytics",
+            "certificate_hash": "b0de858c10204a5417136b9a60b8587d12791f00"
+          }
+        },
+        {
+          "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAItm1DG1EqtHEjpIImoOLi2HcUyMZ8Z3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053771142816:android:2e0265042914ec7d929bc5",
+        "android_client_info": {
+          "package_name": "com.haha.fastproject.main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053771142816-lnmo5of6hdigiu2smamfmaf2pm66np1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.haha.fastproject.main",
+            "certificate_hash": "b0de858c10204a5417136b9a60b8587d12791f00"
+          }
+        },
+        {
+          "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAItm1DG1EqtHEjpIImoOLi2HcUyMZ8Z3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053771142816:android:ca67ceaaadf7ff5d929bc5",
+        "android_client_info": {
+          "package_name": "com.haha.fastproject.platform_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053771142816-mbmlqqgafbv8at1mq3utps3eflf4u3ju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.haha.fastproject.platform_login",
+            "certificate_hash": "778a06046d74b7eb5a9d33a743fc7502a1b2e938"
+          }
+        },
+        {
+          "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAItm1DG1EqtHEjpIImoOLi2HcUyMZ8Z3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053771142816:android:60ef44288da44cea929bc5",
+        "android_client_info": {
+          "package_name": "com.haha.fastproject.push"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053771142816-op77icpvoc9ir1c1d79bueolakgk2dj1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.haha.fastproject.push",
+            "certificate_hash": "b0de858c10204a5417136b9a60b8587d12791f00"
+          }
+        },
+        {
+          "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAItm1DG1EqtHEjpIImoOLi2HcUyMZ8Z3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053771142816-dlmonavrgbs5qp83rv5epug6epvb9mp0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
