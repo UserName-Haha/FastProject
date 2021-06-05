@@ -1,4 +1,4 @@
-- 一个帮你快速实现MVVM+组件化的项目
+- 一个帮你快速实现MVVM+组件化的壳项目
   - [x] MVVM
   - [x] 组件化
 
@@ -14,25 +14,21 @@
 
     - `module-main` (主业务实现模块)
 
-    - `module-platform-login`（三方登录业务模块）
-
-    - `module-crashlytics` （异常上报模块）
-
     - `Module.....`
 
       > 功能组件
 
-      - `feature-nmessa`（message功能）
+      - `feature-message`（message功能）
 
       - `feature-push` （推送功能）
 
       - `feature-platform-login` （三方登录功能）
 
         > 基础组件
-
+        - `base-common` (通用基础library)
         - `base-res`  （放置项目通用资源的library）
         - `base-mvvmhabit` （帮助更好的实现MVVM的library）
-        - `base-net` （网络基础模块）
+        - `base-net` （网络基础library）
 
 - 项目中以`Module-`开头的module一般都是可以独立运行的，通过修改 `gradle.properties` 文件中的 `isBuildModule` 属性即可设置是否独立运行
 
