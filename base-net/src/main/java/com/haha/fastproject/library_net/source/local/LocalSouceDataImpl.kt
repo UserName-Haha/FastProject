@@ -26,9 +26,4 @@ class LocalSouceDataImpl private constructor() : LocalSouceData {
         }
     }
 
-    override fun saveLoginPhoneNumber(phoneNumber: String) {
-        SPUtils.getInstance().put(SPConstant.KEY_PHONE_LOGIN_NUMBER, phoneNumber)
-    }
-
-
 }

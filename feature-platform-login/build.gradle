@@ -45,9 +45,9 @@ android {
 
     signingConfigs {
         release {
-            storeFile rootProject.file('AuChat_qixi123.jks')
+            storeFile rootProject.file('TestKey')
             storePassword '123abc'
-            keyAlias 'test'
+            keyAlias 'TestKeyAlias'
             keyPassword '123abc'
         }
     }

@@ -2,7 +2,6 @@ package com.haha.fastproject.platform_login.impl
 
 import android.app.Activity
 import android.content.Intent
-import com.haha.fastproject.base.contract.AccountBean
 import com.haha.fastproject.platform_login.ILogin
 import com.haha.fastproject.platform_login.LoginType
 import com.haha.fastproject.platform_login.PlatformLogin
@@ -11,6 +10,7 @@ import com.facebook.FacebookCallback
 import com.facebook.FacebookException
 import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
+import com.haha.fastproject.base.contract.AccountBean
 import me.goldze.mvvmhabit.utils.KLog
 import java.lang.ref.WeakReference
 import java.util.*

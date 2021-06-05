@@ -56,56 +56,6 @@ object AccountManger {
     }
 
     /**
-     * 更新账户信息（一般用户更新账户某个或者某几个字段）
-     */
-    @JvmStatic
-    fun updateAccountInfo(newAccountBean: AccountBean?) {
-        newAccountBean?.apply {
-            val accountInfo = getAccountInfo()
-            if (accountInfo != null) {
-                if (account.isNullOrBlank()) {
-                    accountInfo.account = account
-                }
-                if (!face.isNullOrBlank()) {
-                    accountInfo.face = face
-                }
-                if (!nickname.isNullOrBlank()) {
-                    accountInfo.nickname = nickname
-                }
-                if (sex != null) {
-                    accountInfo.sex = sex
-                }
-                if (uid.isNullOrBlank()) {
-                    accountInfo.uid = uid
-                }
-                if (recvDiamond != null) {
-                    accountInfo.recvDiamond = recvDiamond
-                }
-                if (sendDiamond != null) {
-                    accountInfo.sendDiamond = sendDiamond
-                }
-                if (diamond != null) {
-                    accountInfo.diamond = diamond
-                }
-                if (fansTotal != null) {
-                    accountInfo.fansTotal = fansTotal
-                }
-                if (followTotal != null) {
-                    accountInfo.followTotal = followTotal
-                }
-                if (grade != null) {
-                    accountInfo.grade = grade
-                }
-                if (vip != null) {
-                    accountInfo.vip = vip
-                }
-            } else {
-                putAccountInfo(this)
-            }
-        }
-    }
-
-    /**
      * 清空当前账户信息
      */
     @JvmStatic
@@ -130,15 +80,6 @@ object AccountManger {
                 }
             }
         }
-
-    @JvmStatic
-    fun getUid(): String? {
-        val accountInfo = getAccountInfo()
-        if (accountInfo != null && !accountInfo.uid.isNullOrBlank()) {
-            return accountInfo.uid
-        }
-        return null
-    }
 
 
 }

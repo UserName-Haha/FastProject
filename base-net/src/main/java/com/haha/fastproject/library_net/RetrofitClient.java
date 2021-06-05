@@ -8,7 +8,6 @@ import com.haha.fastproject.base.global.constant.Constant;
 import com.haha.fastproject.base.utils.AppUtils;
 import com.haha.fastproject.library_net.Interceptor.BaseInterceptor;
 import com.haha.fastproject.library_net.Interceptor.CacheInterceptor;
-import com.haha.fastproject.library_net.Interceptor.DecryptInterceptor;
 import com.haha.fastproject.library_net.Interceptor.OkHttpMockInterceptor;
 import com.haha.fastproject.library_net.Interceptor.logging.Level;
 import com.haha.fastproject.library_net.Interceptor.logging.LoggingInterceptor;
@@ -122,8 +121,6 @@ public class RetrofitClient {
                 .addInterceptor(new CacheInterceptor(mContext))
                 //网络数据Mock拦截器(通过AppConfig#HTTP_DATA_MOCK_ENABLE 属性控制是否启用)
                 .addInterceptor(new OkHttpMockInterceptor(new AssetsInputStreamProvider(), 5))
-                //解密拦截器需要放在最后一个
-                .addInterceptor(new DecryptInterceptor())
                 .sslSocketFactory(sslParams.sSLSocketFactory, sslParams.trustManager)
                 .connectTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS)
                 .writeTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS)

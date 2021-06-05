@@ -2,7 +2,6 @@ package com.haha.fastproject.platform_login.impl
 
 import android.app.Activity
 import android.content.Intent
-import com.haha.fastproject.base.contract.AccountBean
 import com.haha.fastproject.base.global.constant.Constant
 import com.haha.fastproject.platform_login.ILogin
 import com.haha.fastproject.platform_login.LoginType
@@ -12,6 +11,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
+import com.haha.fastproject.base.contract.AccountBean
 import me.goldze.mvvmhabit.utils.KLog
 import java.lang.ref.WeakReference
 

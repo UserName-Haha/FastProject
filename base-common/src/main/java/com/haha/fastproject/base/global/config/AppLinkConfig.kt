@@ -15,8 +15,8 @@ object AppLinkConfig {
         arrayListOf(AppLinkBean("http", "m.aliyun.com"),
             AppLinkBean("https", "m.aliyun.com"),
             AppLinkBean("auchat", "m.aliyun.com"),
-            AppLinkBean("https", "web.yeyujiaren.com"),
-            AppLinkBean("http", "web.yeyujiaren.com")
+            AppLinkBean("https", "web.aliyun.com"),
+            AppLinkBean("http", "web.aliyun.com")
 
         )
 

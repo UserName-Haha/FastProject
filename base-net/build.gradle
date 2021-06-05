@@ -42,20 +42,11 @@ android {
         }
     }
 
-    signingConfigs {
-        release {
-            storeFile rootProject.file('AuChat_qixi123.jks')
-            storePassword 'qixi123'
-            keyAlias 'auchat'
-            keyPassword 'qixi123'
-        }
-    }
-
     buildTypes {
         debug {
             minifyEnabled false
             shrinkResources false
-            signingConfig signingConfigs.release
+
         }
         release {
             //开启混淆
@@ -64,7 +55,6 @@ android {
             zipAlignEnabled true
             //默认的混淆文件以及我们指定的混淆文件
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
         }
     }
 

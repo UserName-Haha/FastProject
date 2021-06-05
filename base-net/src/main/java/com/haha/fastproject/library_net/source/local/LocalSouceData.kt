@@ -7,9 +7,5 @@ package com.haha.fastproject.library_net.source.local
  */
 interface LocalSouceData {
 
-    /**
-     * 保存当前登录的手机号
-     */
-    fun saveLoginPhoneNumber(phoneNumber: String)
 
 }

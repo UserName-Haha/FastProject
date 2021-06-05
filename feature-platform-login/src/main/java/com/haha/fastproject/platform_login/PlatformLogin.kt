@@ -3,7 +3,6 @@ package com.haha.fastproject.platform_login
 import android.app.Activity
 import android.content.Intent
 import com.haha.fastproject.base.contract.AccountBean
-import com.haha.fastproject.base.contract.LoginBean
 
 /**
  * @author zhe.chen

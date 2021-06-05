@@ -10,20 +10,5 @@ import com.haha.fastproject.base.contract.LoginBean
  */
 object SharedVariable {
 
-    /**
-     * 当前的更新信息
-     */
-    var mCurrentUpdateInfo: AppLanuchBean.UpDataAppBean? = null
-
-    /**
-     * 当前的Socket连接地址
-     */
-    var mSocketPath: String? = null
-
-    /**
-     * 首次登录用户,登录成功后返回的用户信息暂存。等待用户信息填写完成后使用
-     */
-    var mRegisterUserInfo: LoginBean? = null
-
 
 }

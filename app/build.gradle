@@ -29,7 +29,7 @@ android {
         release {
             storeFile rootProject.file('TestKey')
             storePassword '123abc'
-            keyAlias 'test'
+            keyAlias 'TestKeyAlias'
             keyPassword '123abc'
         }
     }
