@@ -1,4 +1,5 @@
 <resources>
-    <string name="facebook_app_id">679443842834792</string>
-    <string name="fb_login_protocol_scheme">fb679443842834792</string>
+    <!--替换成你自己的-->
+    <string name="facebook_app_id">xxxxxxx</string>
+    <string name="fb_login_protocol_scheme">xxxxxxx</string>
 </resources>
