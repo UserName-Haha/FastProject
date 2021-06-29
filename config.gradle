@@ -71,7 +71,7 @@ ext {
             "xpopup"                 : "com.lxj:xpopup:2.2.23",
             "brvh"                   : "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6",
             "agentweb"               : "com.just.agentweb:agentweb-androidx:4.1.4",
-            "android_CN_OAID"        : "com.github.gzu-liyujiang:Android_CN_OAID:4.0.0",
+            "android_CN_OAID"        : "com.github.gzu-liyujiang:Android_CN_OAID:4.2.0",
             "webSocket"              : "com.github.0xZhangKe:WebSocketDemo:3.1",
             "pictureselector"        : "io.github.lucksiege:pictureselector:v2.7.0-rc02",
             "immersionbar-components": "com.gyf.immersionbar:immersionbar-components:3.0.0",
