@@ -63,7 +63,7 @@ public class Country implements PyEntity {
 
     public static void load(@NonNull Context ctx, Language language) throws IOException, JSONException {
         countries = new ArrayList<>();
-        BufferedReader br = new BufferedReader(new InputStreamReader(ctx.getResources().getAssets().open("code.json")));
+        BufferedReader br = new BufferedReader(new InputStreamReader(ctx.getResources().getAssets().open("country.json")));
         String line;
         StringBuilder sb = new StringBuilder();
         while ((line = br.readLine()) != null)
