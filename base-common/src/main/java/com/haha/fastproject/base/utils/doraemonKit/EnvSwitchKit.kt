@@ -14,7 +14,7 @@ import me.goldze.mvvmhabit.utils.toast.ToastUtils
  * @date 3/24/21 20:44
  * Des:
  */
-class EnvSwitchKit(override val icon: Int = R.drawable.ic_launcher, override val name: Int = R.string.kit_env_switch) : AbstractKit() {
+class EnvSwitchKit(override val icon: Int = R.mipmap.ic_launcher, override val name: Int = R.string.kit_env_switch) : AbstractKit() {
 
     private val INDEX_HOST_RELEASE = 0
     private val INDEX_HOST_TEST = 1

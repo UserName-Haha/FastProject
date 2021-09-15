@@ -13,7 +13,7 @@ import me.goldze.mvvmhabit.utils.toast.ToastUtils
  * @date 2021/5/18 10:10
  * Des:
  */
-class HttpDataMockKit(override val icon: Int = R.drawable.ic_launcher, override val name: Int = R.string.kit_http_data_mock_switch) : AbstractKit() {
+class HttpDataMockKit(override val icon: Int = R.mipmap.ic_launcher, override val name: Int = R.string.kit_http_data_mock_switch) : AbstractKit() {
 
     private val INDEX_OPEN = 0
     private val INDEX_CLOSE = 1

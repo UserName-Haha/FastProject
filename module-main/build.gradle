@@ -33,8 +33,6 @@ dependencies {
     api project(':base-net')
     //三方登录功能模块
     api project(':feature-platform-login')
-    //推送功能模块
-    api project(':feature-push')
 
     //刷新相关
     api 'com.scwang.smart:refresh-layout-kernel:2.0.3'
