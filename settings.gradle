@@ -1,4 +1,4 @@
-rootProject.name = "WanAndroid"
+rootProject.name = "FastProject"
 include ':feature-platform-login'
 include ':app'
 include ':base-common'
