@@ -12,11 +12,5 @@ public class ModuleLifecycleReflexs {
     //主业务模块
     private static final String MainInit = "com.haha.fastproject.main.MainModuleInit";
 
-    //三方登录模块
-    private static final String PlatformLoginInit = "com.haha.fastproject.platform_login.PlatformLoginModuleInit";
-
-    //推送模块
-    private static final String PushModuleInit = "com.haha.fastproject.push.PushModuleInit";
-
-    public static String[] initModuleNames = {BaseInit, MainInit, PlatformLoginInit, PushModuleInit};
+    public static String[] initModuleNames = {BaseInit, MainInit};
 }

@@ -67,8 +67,6 @@ dependencies {
     api rootProject.ext.support["constraintlayout"]
     api rootProject.ext.support["material"]
 
-    //MVVM
-    api project(path: ':base-mvvmhabit')
     //公用资源在base中依赖
     api project(path: ':base-res')
     //阿里路由库
@@ -92,6 +90,53 @@ dependencies {
     api rootProject.ext.dependencies["flycoTabLayout"]
     //greendao
     api rootProject.ext.dependencies["greendao"]
+
+
+//    mvvm
+
+    //rxjava
+    api rootProject.ext.dependencies.rxjava
+    api rootProject.ext.dependencies.rxandroid
+    //rx管理View的生命周期
+    api(rootProject.ext.dependencies.rxlifecycle) {
+        exclude group: 'com.android.support'
+    }
+    api(rootProject.ext.dependencies["rxlifecycle-components"]) {
+        exclude group: 'com.android.support'
+    }
+    //rxbinding
+    api(rootProject.ext.dependencies.rxbinding) {
+        exclude group: 'com.android.support'
+    }
+    //权限请求
+    api(rootProject.ext.dependencies.permissionx) {
+        exclude group: 'com.android.support'
+    }
+    //network
+    api rootProject.ext.dependencies["okhttp"]
+    api rootProject.ext.dependencies["retrofit"]
+    api rootProject.ext.dependencies["converter-gson"]
+    api rootProject.ext.dependencies["adapter-rxjava"]
+    //json解析
+    api rootProject.ext.dependencies["gson"]
+    //glide图片加载库
+    api(rootProject.ext.dependencies.glide) {
+        exclude group: 'com.android.support'
+    }
+    annotationProcessor rootProject.ext.dependencies["glide-compiler"]
+    //Google LiveData和ViewModel组件
+    api rootProject.ext.dependencies["lifecycle-extensions"]
+    annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]
+
+    //更方便使用和避免采坑的Fragment的框架
+    api rootProject.ext.dependencies["fragmentationx"]
+    api rootProject.ext.dependencies["fragmentationx-core"]
+    //适配框架
+    api rootProject.ext.dependencies["autosize"]
+    //dialog
+    api rootProject.ext.dependencies["xpopup"]
+
+
 
 }
 

@@ -1,8 +1,6 @@
 rootProject.name = "FastProject"
-include ':feature-platform-login'
 include ':app'
 include ':base-common'
 include ':base-res'
-include ':base-mvvmhabit'
 include ':base-net'
 include ':module-main'

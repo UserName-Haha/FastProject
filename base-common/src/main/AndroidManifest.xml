@@ -33,9 +33,18 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".widget.countrypicker.PickActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
+            android:name="me.goldze.mvvmhabit.base.ContainerActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity
+            android:name="me.goldze.mvvmhabit.crash.DefaultErrorActivity"
+            android:process=":error_activity" />
+
+        <provider
+            android:name="me.goldze.mvvmhabit.crash.CaocInitProvider"
+            android:authorities="${applicationId}.customactivityoncrashinitprovider"
+            android:exported="false"
+            android:initOrder="101" />
 
     </application>
 

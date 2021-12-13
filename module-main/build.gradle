@@ -31,8 +31,6 @@ dependencies {
     api project(':base-common')
     //网络库
     api project(':base-net')
-    //三方登录功能模块
-    api project(':feature-platform-login')
 
     //刷新相关
     api 'com.scwang.smart:refresh-layout-kernel:2.0.3'
