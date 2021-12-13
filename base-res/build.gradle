@@ -26,6 +26,6 @@ android {
 }
 
 dependencies {
-    api rootProject.ext.support["appcompat"]
-    api rootProject.ext.support["design"]
+    api "androidx.appcompat:appcompat:${rootProject.dep.Appcompat}"
+    api "com.google.android.material:material:${rootProject.dep.Design}"
 }
