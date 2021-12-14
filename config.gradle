@@ -12,51 +12,56 @@ ext {
 
     //依赖第三方配置
     dep = [
-            'Corektx'               : "1.7.0",
-            'SupportV4'             : "1.0.0",
-            'Appcompat'             : "1.4.0",
-            'Recyclerview'          : "1.2.0",
-            'AndroidxFragment'      : "1.4.0",
-            'Design'                : "1.3.0",
-            'Constraintlayout'      : "2.1.2",
+            'Corektx'                 : "1.7.0",
+            'SupportV4'               : "1.0.0",
+            'Appcompat'               : "1.4.0",
+            'Recyclerview'            : "1.2.0",
+            'AndroidxFragment'        : "1.4.0",
+            'Design'                  : "1.3.0",
+            'Constraintlayout'        : "2.1.2",
+
+            //协程相关
+            "kotlinxCoroutinesAndroid": "1.3.9",
+            "CoroutinesViewmodel"     : "2.4.0",
+            "CoroutinesLifecycle"     : "2.4.0",
 
             //rxjava
-            "Rxjava"                : "2.2.10",
-            "Rxandroid"             : "2.1.1",
+            "Rxjava"                  : "2.2.10",
+            "Rxandroid"               : "2.1.1",
             //rx系列与View生命周期同步
-            "Rxlifecycle"            : "2.2.2",
-            "RxlifecycleComponents" : "2.2.2",
+            "Rxlifecycle"             : "2.2.2",
+            "RxlifecycleComponents"   : "2.2.2",
             //6.0权限请求
-            Permissionx             : "1.4.0",
+            Permissionx               : "1.4.0",
             //network
-            "Okhttp"                : "4.9.1",
-            "Retrofit"              : "2.9.0",
-            "ConverterGson"         : "2.9.0",
-            "AdapterRxjava"         : "2.9.0",
+            "Okhttp"                  : "4.9.1",
+            "Retrofit"                : "2.9.0",
+            "ConverterGson"           : "2.9.0",
+            "AdapterRxjava"           : "2.9.0",
             //glide图片加载
-            "Glide"                 : "4.11.0",
-            "GlideCompiler"         : "4.11.0",
+            "Glide"                   : "4.11.0",
+            "GlideCompiler"           : "4.11.0",
             //json解析
-            "Gson"                  : "2.8.8",
+            "Gson"                    : "2.8.8",
             //Google AAC
-            "LifecycleExtensions"   : "2.2.0",
-            "LifecycleCompiler"     : "2.3.1",
+            "LifecycleExtensions"     : "2.2.0",
+            "LifecycleCompiler"       : "2.3.1",
             //fragmentationx
-            "Fragmentationx"        : "1.0.6",
-            "FragmentationxCore"    : "1.0.6",
+            "Fragmentationx"          : "1.0.6",
+            "FragmentationxCore"      : "1.0.6",
             //ARoute
-            "ArouterApi"            : "1.5.1",
-            "ArouterCompiler"       : "1.5.1",
+            "ArouterApi"              : "1.5.1",
+            "ArouterCompiler"         : "1.5.1",
             //AutoSize
-            "Autosize"              : "1.2.1",
-            "Xpopup"                : "2.7.0",
-            "Brvh"                  : "3.0.6",
-            "Agentweb"              : "4.1.4",
-            "AndroidCNOAID"         : "4.2.0",
-            "Pictureselector"       : "v2.7.0-rc02",
-            "ImmersionbarComponents": "3.0.0",
-            "Immersionbar"          : "3.0.0",
-            "RefreshLayout"         : "2.0.3",
+            "Autosize"                : "1.2.1",
+            "Xpopup"                  : "2.7.0",
+            "Brvh"                    : "3.0.6",
+            "Agentweb"                : "4.1.4",
+            "AndroidCNOAID"           : "4.2.0",
+            "Pictureselector"         : "v2.7.0-rc02",
+            "ImmersionbarComponents"  : "3.0.0",
+            "Immersionbar"            : "3.0.0",
+            "RefreshLayout"           : "2.0.3",
     ]
 
 

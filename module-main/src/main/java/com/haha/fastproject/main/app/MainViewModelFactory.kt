@@ -1,11 +1,9 @@
 package com.haha.fastproject.main.app
 
-import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.haha.fastproject.library_net.AppRepository
 import com.haha.fastproject.library_net.Injection
-import com.haha.fastproject.main.splash.SplashViewModel
 import me.goldze.mvvmhabit.base.BaseApplication
 
 /**
@@ -23,14 +21,14 @@ class MainViewModelFactory private constructor(
         )
     }
 
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        try {
-            modelClass.getDeclaredConstructor(android.app.Application::class.java, AppRepository::class.java).run {
-                newInstance(BaseApplication.getInstance(), appRepository) as T
-            }
-        } catch (e: NoSuchMethodException) {
-            throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
+    override fun <T : ViewModel> create(modelClass: Class<T>): T = try {
+        modelClass.getDeclaredConstructor(
+            android.app.Application::class.java,
+            AppRepository::class.java
+        ).run {
+            newInstance(BaseApplication.getInstance(), appRepository) as T
         }
+    } catch (e: NoSuchMethodException) {
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }
 

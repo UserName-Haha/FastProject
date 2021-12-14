@@ -72,6 +72,13 @@ dependencies {
     api "androidx.constraintlayout:constraintlayout:${rootProject.dep.Constraintlayout}"
     api "com.google.android.material:material:${rootProject.dep.Design}"
 
+    //kotlin协程
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:${rootProject.dep.kotlinxCoroutinesAndroid}"
+    //协程Viewmodel扩展库
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:${rootProject.dep.CoroutinesViewmodel}"
+    //协程lifecycle扩展库
+    api "androidx.lifecycle:lifecycle-runtime-ktx:${rootProject.dep.CoroutinesLifecycle}"
+
     //阿里路由库
     api "com.alibaba:arouter-api:${rootProject.dep.ArouterApi}"
     kapt "com.alibaba:arouter-compiler:${rootProject.dep.ArouterCompiler}"
@@ -123,5 +130,6 @@ dependencies {
     api "me.jessyan:autosize:${rootProject.dep.Autosize}"
     //dialog
     api "com.github.li-xiaojun:XPopup:${rootProject.dep.Xpopup}"
+
 
 }
