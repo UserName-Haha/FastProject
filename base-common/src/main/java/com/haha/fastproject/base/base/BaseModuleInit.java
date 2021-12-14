@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.github.gzuliyujiang.oaid.DeviceIdentifier;
 import com.haha.fastproject.base.global.config.AppConfig;
 import com.haha.fastproject.base.global.constant.Constant;
 import com.haha.fastproject.base.utils.PermissionExtension;
@@ -17,7 +18,6 @@ import com.haha.fastproject.base.utils.doraemonKit.CheckGooglePlayServiceKit;
 import com.haha.fastproject.base.utils.doraemonKit.HttpDataMockKit;
 import com.didichuxing.doraemonkit.DoraemonKit;
 import com.didichuxing.doraemonkit.kit.AbstractKit;
-import com.github.gzuliyujiang.oaid.DeviceID;
 import com.qixi.zidan.v2.utils.doraemonKit.EnvSwitchKit;
 
 import java.util.ArrayList;
@@ -36,7 +36,6 @@ public class BaseModuleInit implements IModuleInit {
     @Override
     public boolean onInitAhead(Application application) {
         //开启打印日志
-        KLog.init(true);
         KLog.init(AppConfig.LOG_ENABLE);
         KLog.w("基础层初始化 -- onInitAhead");
         //初始化阿里路由框架
@@ -54,7 +53,7 @@ public class BaseModuleInit implements IModuleInit {
         registerGlobalMustPermissionsRequest(application);
         ToastUtils.init(application);
         //设备唯一标识工具库注册
-        DeviceID.register(application);
+        DeviceIdentifier.register(application);
         //初始化DoraemonKit工具
         ArrayList<AbstractKit> abstractKitSparseArray = new ArrayList();
         abstractKitSparseArray.add(new EnvSwitchKit());

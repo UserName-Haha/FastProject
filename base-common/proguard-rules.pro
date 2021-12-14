@@ -43,18 +43,21 @@
 -keep class com.haha.fastproject.base.widget.** { *; }
 
 
-#---------------------------------GreenDao------------------------------------
--keepclassmembers class * extends org.greenrobot.greendao.AbstractDao {
-public static java.lang.String TABLENAME;
-}
--keep class **$Properties { *; }
-
-# If you DO use SQLCipher:
--keep class org.greenrobot.greendao.database.SqlCipherEncryptedHelper { *; }
-
-# If you do NOT use SQLCipher:
--dontwarn net.sqlcipher.database.**
-# If you do NOT use RxJava:
--dontwarn rx.**
-
+#---------------------------------Android_CN_OAID------------------------------------
+-keep class repeackage.com.uodis.opendevice.aidl.** { *; }
+-keep interface repeackage.com.uodis.opendevice.aidl.** { *; }
+-keep class repeackage.com.asus.msa.SupplementaryDID.** { *; }
+-keep interface repeackage.com.asus.msa.SupplementaryDID.** { *; }
+-keep class repeackage.com.bun.lib.** { *; }
+-keep interface repeackage.com.bun.lib.** { *; }
+-keep class repeackage.com.heytap.openid.** { *; }
+-keep interface repeackage.com.heytap.openid.** { *; }
+-keep class repeackage.com.samsung.android.deviceidservice.** { *; }
+-keep interface repeackage.com.samsung.android.deviceidservice.** { *; }
+-keep class repeackage.com.zui.deviceidservice.** { *; }
+-keep interface repeackage.com.zui.deviceidservice.** { *; }
+-keep class repeackage.com.coolpad.deviceidsupport.** { *; }
+-keep interface repeackage.com.coolpad.deviceidsupport.** { *; }
+-keep class repeackage.com.android.creator.** { *; }
+-keep interface repeackage.com.android.creator.** { *; }
 
