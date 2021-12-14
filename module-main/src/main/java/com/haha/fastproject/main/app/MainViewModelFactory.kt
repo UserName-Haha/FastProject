@@ -24,8 +24,12 @@ class MainViewModelFactory private constructor(
     }
 
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(SplashViewModel::class.java)) {
-            return SplashViewModel(BaseApplication.getInstance(), appRepository) as T
+        try {
+            modelClass.getDeclaredConstructor(android.app.Application::class.java, AppRepository::class.java).run {
+                newInstance(BaseApplication.getInstance(), appRepository) as T
+            }
+        } catch (e: NoSuchMethodException) {
+            throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }

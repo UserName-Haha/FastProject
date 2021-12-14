@@ -23,7 +23,6 @@ class SplashActivity : BaseActivity<MainActivitySplashBinding, SplashViewModel>(
     override fun initVariableId(): Int = BR.splashViewModel
 
     override fun initViewModel(): SplashViewModel {
-        val instance = MainViewModelFactory.getInstance()
-        return ViewModelProvider(this, instance).get(SplashViewModel::class.java)
+        return ViewModelProvider(this, MainViewModelFactory.getInstance()).get(SplashViewModel::class.java)
     }
 }
