@@ -14,7 +14,9 @@
 
     - `module-main` (主业务实现模块)
 
-    - `Module.....`
+    - `ModuleA`
+    - `ModuleB`
+    - `Module...`
 
       > 功能组件
 
